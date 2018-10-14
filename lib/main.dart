@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import './homepage.dart' as homepage;
+import './yourwork.dart' as secondpage;
+import './thirdpage.dart' as thirdpage;
 
 void main() => runApp(new MaterialApp(home: new ShareApp()));
 
@@ -35,6 +38,8 @@ class ShareAppState extends State<ShareApp> with SingleTickerProviderStateMixin{
           ],
         ),
         bottomNavigationBar: new TabBar(
+          labelColor: Colors.lightBlue,
+          indicatorWeight: 5.0,
           controller: controller,
           tabs: <Widget>[
             new Tab(child: new Text('Saved Work'),),
@@ -45,9 +50,9 @@ class ShareAppState extends State<ShareApp> with SingleTickerProviderStateMixin{
         body: new TabBarView(
         controller: controller,
         children: <Widget>[
-          new popular.PopularPage(),
-          new homepage.HomepagePage(),
-          new favourite.FavouritePage(),
+          new secondpage.YourWork(),
+          new homepage.Homepage(),
+          new thirdpage.ThirdPage(),
         ],
       ),
       );
