@@ -42,6 +42,14 @@ class ShareAppState extends State<ShareApp> with SingleTickerProviderStateMixin{
             new Tab(child: new Text('Settings'),)
           ],
         ),
+        body: new TabBarView(
+        controller: controller,
+        children: <Widget>[
+          new popular.PopularPage(),
+          new homepage.HomepagePage(),
+          new favourite.FavouritePage(),
+        ],
+      ),
       );
       
     }
