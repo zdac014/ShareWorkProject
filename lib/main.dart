@@ -20,6 +20,14 @@ class ShareAppState extends State<ShareApp> {
             new IconButton(icon: new Icon(Icons.notifications), onPressed: () {},),
           ],
         ),
+        bottomNavigationBar: new TabBar(
+          controller: controller,
+          tabs: <Widget>[
+            new Tab(child: new Text('Saved Work'),),
+            new Tab(icon: new Icon(Icons.home)),
+            new Tab(child: new Text('Settings'),)
+          ],
+        ),
       );
       
     }
