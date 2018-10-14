@@ -9,7 +9,21 @@ class ShareApp extends StatefulWidget{
   }
 }
 
-class ShareAppState extends State<ShareApp> {
+class ShareAppState extends State<ShareApp> with SingleTickerProviderStateMixin{
+  TabController controller;
+
+  @override
+  void initState() {
+    super.initState();
+    controller = new TabController(vsync: this, length: 3);
+  }
+
+  @override
+  void dispose() {
+    controller.dispose();
+    super.dispose();
+  }
+
   @override
   Widget build(BuildContext context) {
       return new Scaffold(
