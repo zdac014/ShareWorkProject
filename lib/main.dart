@@ -12,7 +12,15 @@ class ShareApp extends StatefulWidget{
 class ShareAppState extends State<ShareApp> {
   @override
   Widget build(BuildContext context) {
-      return new Scaffold();
+      return new Scaffold(
+        appBar: new AppBar(
+          title: new Text('Sharing!'),
+          backgroundColor: Colors.lightBlue,
+          actions: <Widget>[
+            new IconButton(icon: new Icon(Icons.notifications), onPressed: () {},),
+          ],
+        ),
+      );
       
     }
 }
