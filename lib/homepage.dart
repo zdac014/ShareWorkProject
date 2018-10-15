@@ -10,19 +10,6 @@ class Homepage extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             new Text('Upload your work here!'),
-            // new Align(
-            //   alignment: Alignment.bottomRight,
-            //   child: new Wrap(
-            //     spacing: 60.0,
-            //     crossAxisAlignment: WrapCrossAlignment.end,
-            //     children: <Widget>[
-            //       new IconButton(icon: new Icon(Icons.camera_alt),
-            //         //padding: new EdgeInsets.symmetric(vertical: 200.0),
-            //         onPressed: () {},
-            //       ),
-            //     ],
-            //   ),
-            // ),
             new Padding(
               padding: new EdgeInsets.symmetric(vertical: 10.0),
               child: new FlatButton.icon(
