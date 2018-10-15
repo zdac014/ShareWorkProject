@@ -31,7 +31,7 @@ class ShareAppState extends State<ShareApp> with SingleTickerProviderStateMixin{
   Widget build(BuildContext context) {
       return new Scaffold(
         appBar: new AppBar(
-          title: new Text('Sharing!'),
+          title: new Text('Sharing!', textAlign: TextAlign.center, style: TextStyle(),),
           backgroundColor: Colors.lightBlue,
           actions: <Widget>[
             new IconButton(icon: new Icon(Icons.notifications), onPressed: () {},),
